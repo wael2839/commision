@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    font-family: wael;
+}
+
+@font-face {
+    font-family: wael;
+    src: url(../fontawesome/Alexandria.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+    direction: rtl;
+    /* overflow: hidden; */
+}
+
+/* body{
+    overflow: hidden;
+} */
+
+
+i.fa-solid,
+i.fa-brands{
+    transition: none !important;
+}
+
+:root{
+    --main: #0078bc;
+    --sub: #fff;
+    --shd: #00000088;
+    --val: 10px;
+    --wrong: #dc3545;
+    --sucs: #ffc107;
+}
+
+::selection{
+    background: var(--main);
+    color: white;
+}
+
+.flex-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.flex-b{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.flex-a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-v{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.grid-1-col{
+    display: grid;
+}
+
+.grid-2-col{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-3-col{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-4-col{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.p5{
+    padding: 5px;
+}
+
+.p8{
+    padding: 8px;
+}
+
+.p10{
+    padding: var(--val);
+}
+
+.p15{
+    padding: 5px;
+}
+
+.p20{
+    padding: 20px;
+}
+
+.p25{
+    padding: 25px;
+}
+
+.g5{
+    gap: 5px;
+}
+
+.g8{
+    gap: 8px;
+}
+
+.g10{
+    gap: var(--val);
+}
+
+.g15{
+    gap: 15px;
+}
+
+.g20{
+    gap: 20px;
+}
+
+.g25{
+    gap: 25px;
+}
+
+.r5{
+    border-radius: 5px;
+}
+
+.r8{
+    border-radius: 8px;
+}
+
+.r10{
+    border-radius: var(--val);
+}
+
+.r15{
+    border-radius: 15px;
+}
+
+.r20{
+    border-radius: 20px;
+}
+
+.r25{
+    border-radius: 25px;
+}
+
+.r50{
+    border-radius: 50%;
+}
+
+.btn{
+    background-color: var(--main);
+    color: var(--sub);
+    padding: var(--val) 15px;
+    margin: 3px;
+    border-radius: var(--val);
+    font-size: 18px;
+    line-height: 26px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: 2px solid var(--main);
+    outline: none;
+    min-width: 150px;
+}
+
+.btn-table{
+    font-size: 22px;
+    width: 32px;
+    height: 32px;
+}
+
+.btn-square{
+    font-size: 24px;
+    min-width: 50px !important;
+    height: 50px !important;
+}
+
+.btn:hover{
+    background-color: var(--sub);
+    color: var(--main);
+    border-color: var(--main);
+}
+
+.btn-red{
+    background-color: var(--wrong);
+    border-color: var(--wrong);
+}
+
+.btn-red:hover{
+    background-color: var(--sub);
+    color: var(--wrong);
+    border-color: var(--wrong);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--main), var(--sub));
+    padding: 30px;
+ 
+}
+
+.container.wid{
+    padding: 30px 330px 30px 30px;
+    position: relative;
+}
+
+.error{
+    text-align: center;
+    background-color: var(--wrong);
+    color: var(--sub);
+    padding: 7px;
+    width: 100%;
+    border-radius: 10px;
+}

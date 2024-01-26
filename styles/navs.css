@@ -1,0 +1,311 @@
+aside {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background-color: var(--sub);
+    box-shadow: 0 0 10px var(--shd);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+    z-index: 99;
+}
+
+aside.show{
+    right: 0;
+}
+
+aside img{
+    width: 260px;
+    height: 260px;
+    border: 0px solid var(--main);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+aside h1{
+    text-align: center;
+    margin: 12px 0;
+    color: var(--main);
+    font-size: 36px;
+}
+
+aside hr{
+    border: 1px solid var(--main);
+    width: 80%;
+    margin: 12px 0;
+}
+
+aside a{
+    width: 100%;
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 40px;
+    color: var(--main);
+    text-decoration: none;
+}
+
+aside a:hover{
+    color: var(--sub);
+    background-color: var(--main);
+    margin-right: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+header{
+    margin-bottom: 12px;
+}
+
+header h2{
+    color: var(--sub);
+    text-shadow: 0 0 3px var(--shd);
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--sub);
+}
+
+header .btn-sider{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    /* background-color: var(--sub);
+    border-radius: 12px; */
+}
+
+header .btn-sider::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: var(--main);
+    border-radius: 5px;
+    top: 10px;
+    right: 5px;
+    transition: all 0.3s;
+}
+
+header .btn-sider.click::after{
+    transform: rotate(-225deg);
+    top: 22.5px;
+}
+
+header .btn-sider.click::before{
+    transform: rotate(225deg);
+    bottom: 22.5px;
+}
+
+header .btn-sider::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: var(--main);
+    border-radius: 5px;
+    bottom: 10px;
+    right: 5px;
+    transition: all 0.3s;
+}
+
+/* dialogs */
+
+.dialog{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--shd);
+    scale: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.dialog.show{
+    scale: 1;
+}
+
+.dialog hr{
+    border: 1px solid var(--main);
+    width: 100%;
+    margin: 0 0;
+}
+
+.box{
+    background-color: var(--sub);
+    max-width: 620px;
+}
+
+.box h2{
+    width: 100%;
+    text-align: center;
+    color: var(--main);
+}
+
+.box1{
+    background-color: var(--sub);
+    max-height: 820px;
+    max-width: 1000px;
+    padding: 25px;
+}
+
+.box1 h2{
+    width: 100%;
+    text-align: center;
+    color: var(--main);
+}
+
+
+.input-box{
+    position: relative;
+    display: inline-block;
+}
+
+.input-box select{
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+}
+.input-box input,
+.input-box select,
+.input-box textarea{
+    font-size: 18px;
+    outline: none;
+    border: 2px solid var(--main);
+    padding: 6px;
+    border-radius: 8px;
+    width: 240px;
+}
+
+
+.input-box label{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    pointer-events: none;
+    font-size: 18px;
+    color: #aaa;
+}
+
+
+#date{
+    top: -15px;
+    font-size: 14px;
+    background-color: var(--main);
+    color: var(--sub);
+    border-radius: 5px;
+    padding: 3px;
+
+}
+
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -15px;
+    font-size: 14px;
+    background-color: var(--main);
+    color: var(--sub);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.input-box1{
+    position: relative;
+    display: inline-block;
+}
+
+.input-box1 select{
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+}
+.input-box1 input,
+.input-box1 select,
+.input-box1 textarea{
+    font-size: 18px;
+    outline: none;
+    border: 2px solid var(--main);
+    padding: 6px;
+    border-radius: 8px;
+    width: 240px;
+}
+
+
+.input-box1 label{
+    position: absolute;
+    top: -15px;
+    right: 8px;
+    pointer-events: none;
+    font-size: 14px;
+    background-color: var(--main);
+    color: var(--sub);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+.input-box1 input:focus ~ label,
+.input-box1 input:valid ~ label{
+    top: -15px;
+    font-size: 14px;
+    background-color: var(--main);
+    color: var(--sub);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+.container1{
+    width: 99.4%;
+    height: 70%;
+    padding-bottom: 7px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+}
+.card{
+    text-align: center;
+    height: 330px;
+    width: 22vw;
+    margin: 4%;
+    box-shadow: 0 0 20px var(--main);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 8px;
+    color: var(--main);
+    background-color: var(--sub);
+    }
+
+
+
+    .card h2{
+        color: green;
+    }
+
+    .card:hover{
+
+        cursor: pointer;
+
+        transform: scale(1.0) ;
+        transition: all .1s ease-in-out;
+
+        cursor: pointer;
+
+        border: 2px solid var(--sub);
+        
+        
+    }
+    .card:hover h2{
+        font-size: 40px;
+        color: green;
+    }
