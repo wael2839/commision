@@ -3,7 +3,8 @@
 <link rel="stylesheet" href="styles/main.css">
 <link rel="stylesheet" href="styles/navs.css">
 <link rel="stylesheet" href="styles/table.css">
-<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
 <link rel="icon" href="images/icon2.jpg">
 <title>
 <?php 

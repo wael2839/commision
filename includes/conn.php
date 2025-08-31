@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
-    $username = "wael";
-    $password = "WWeal#123";
+    $username = "root";
+    $password = "";
     $dbname = "commission";
     // إنشاء اتصال مع قاعدة البيانات
     $conn = mysqli_connect($servername, $username, $password, $dbname);
